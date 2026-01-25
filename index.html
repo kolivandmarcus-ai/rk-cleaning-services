@@ -39,6 +39,11 @@
       border-bottom: 1px solid var(--border);
     }
 
+    header img {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
     header h1 {
       font-size: 3rem;
       font-weight: 500;
@@ -88,6 +93,7 @@
     p {
       color: var(--muted);
       max-width: 700px;
+      margin-bottom: 20px;
     }
 
     ul {
@@ -106,6 +112,20 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 60px;
       align-items: start;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
     }
 
     footer {
@@ -134,6 +154,7 @@
 <body>
 
   <header>
+    <img src="images/logo.png" alt="RK Cleaning Services Logo">
     <h1>RK Cleaning Services</h1>
     <p>
       Luxury, showroom-quality cleaning backed by <strong>11 years of professional experience</strong>.
@@ -192,6 +213,16 @@
           Every clean is approached with precision and care. We avoid harsh chemicals wherever possible,
           using low-tox products that are safer for people, pets, and interiors — without compromising on results.
         </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/CleanOffice1.jpg" alt="Clean Office">
+        <img src="images/cleanRoom1.jpg" alt="Clean Room 1">
+        <img src="images/cleanRoom2.webp" alt="Clean Room 2">
+        <img src="images/cleanRoom3.jpg" alt="Clean Room 3">
       </div>
     </section>
 
